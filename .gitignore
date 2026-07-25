@@ -20,43 +20,36 @@ ENV/
 # Jupyter
 .ipynb_checkpoints/
 
-# VS Code
+# IDE
 .vscode/
-
-# PyCharm
 .idea/
 
 # Logs
 *.log
 logs/
 
-# Data
+# Data & lake
 data/
 datasets/
-dataset/
 raw_data/
 processed_data/
 
-# Models
+# Artefacts & modeles
+artifacts/
 models/
 checkpoints/
-weights/
-*.ckpt
-*.pth
-*.pt
-*.h5
-*.keras
-*.onnx
 *.joblib
 *.pkl
 *.pickle
 
-# TensorBoard
-runs/
-tensorboard/
-
 # MLflow
 mlruns/
+mlflow/mlflow.db
+
+# Airflow
+airflow.db
+airflow-webserver.pid
+standalone_admin_password.txt
 
 # Cache
 .cache/
@@ -71,24 +64,3 @@ Thumbs.db
 *.pem
 *.key
 *.crt
-
-# Temporary
-tmp/
-temp/
-
-# Coverage
-.coverage
-htmlcov/
-
-# Hugging Face
-.cache/huggingface/
-huggingface/
-
-# Weights & Biases
-wandb/
-
-# DVC
-.dvc/cache/
-
-# Local config
-local_settings.py
